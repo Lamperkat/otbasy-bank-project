@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+    @apply font-ubuntu
+}
+
+a{
+    color: #333839;
+}
+.btn{
+    @apply  h-[36px] rounded-md 
+
+}
+.btn-large{
+    @apply  h-[48px] rounded-md 
+}
+.btn-secondary{
+    @apply bg-secondary text-white  py-[6px] px-[10px]
+}
+.error{
+    @apply text-error bg-lightRed border-error border-[1px]
+}
+.underLine {
+    @apply h-[1px] bg-midGray 
+}
+.btn-primary{
+    @apply bg-primary text-white  py-[6px] px-[12px]
+}
+.btn-additional{
+    @apply bg-white text-[#333839]  border-midGray border-[1px]
+}
+.card{
+    @apply border-midGray border-[1px] flex flex-col p-[20px] gap-[15px] rounded-[8px]
+}
+.iconWrapper{
+    border-radius: 50%;
+    background-color: #F5F6F8;
+    display: flex;
+}
+.chip{
+    @apply py-[5.5px] px-[12px] text-xs rounded-[40px] inline-block h-[28px]
+}
+.dot-line {
+    position: relative;
+    padding-right: 10px; /* Add some padding to make room for the dots */
+  }
+  
+  .dot-line span:first-child::after {
+    content: '. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .';
+    position: absolute;
+    left: 100%; /* Start from the end of the first span */
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%; /* Full width for dots to stretch */
+    height: 1px;
+    margin-left: 5px; /* Add some space between the text and dots */
+  }
+  .swiper-container {
+    width: 100%;
+    height: auto;
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
