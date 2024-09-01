@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./public/style.css" />
-
     <title>Document</title>
   </head>
   <body class="pb-[100.16px] max-xs:overflow-x-hidden">
@@ -436,8 +435,8 @@
           </div>
         </div>
         <button
-          id="showContactsBtn"
-          class="btn btn-large btn-additional text-base"
+          id="mobileShowContactsBtn"
+          class="showContactsBtn btn btn-large btn-additional text-base"
         >
           Показать контакты
         </button>
@@ -1111,8 +1110,8 @@
               </div>
             </div>
             <button
-              id="showContactsBtn"
-              class="btn btn-large btn-additional text-base"
+              id="desktopShowContactsBtn"
+              class="showContactsBtn btn btn-large btn-additional text-base"
             >
               Показать контакты
             </button>
@@ -1147,31 +1146,32 @@
         </div>
       </aside>
     </div>
-    <script type="text/javascript">
-      const image = document.querySelector("#main-img-wrapper img").src;
-      console.log(window.screen.width < 480);
-      function toggleText(button) {
-        const initialButtonStyle = button.style;
-        if (button.innerText == "Показать контакты") {
-          button.innerText = "+7 (123) 456 78 90";
-          button.style.backgroundColor = "#EBEFF1";
-          if (window.screen.width <= 480) {
-            button.style.backgroundColor = "#FFFFFF";
+    <script>
+      function handleButtonClick(event) {
+        const button = event.target;
+
+        if (button.id === "mobileShowContactsBtn")
+          if (button.innerText === "Показать контакты") {
+            button.innerText = "+7 (123) 456 78 90";
+            button.style.fontWeight = "500";
+          } else {
+            button.innerText = "Показать контакты";
+            button.style.fontWeight = "400";
           }
-          button.style.fontWeight = "500";
-        } else if (button.innerText == "+7 (123) 456 78 90") {
-          button.innerText = "Показать контакты";
-          button.style = initialButtonStyle;
-        } else {
-          null;
-        }
+        else if (button.id === "desktopShowContactsBtn")
+          if (button.innerText === "Показать контакты") {
+            button.innerText = "+7 (123) 456 78 90";
+            button.style.fontWeight = "500";
+            button.style.background = "#EBEFF1";
+          } else {
+            button.innerText = "Показать контакты";
+            button.style.fontWeight = "400";
+            button.style.background = "#fff";
+          }
       }
-      const showContactsBtn = document.querySelector("#showContactsBtn");
-      console.log(showContactsBtn);
-      showContactsBtn.addEventListener("click", (e) => {
-        if (e.target) {
-          toggleText(e.target);
-        }
+
+      document.querySelectorAll(".showContactsBtn").forEach((button) => {
+        button.addEventListener("click", handleButtonClick);
       });
     </script>
   </body>
