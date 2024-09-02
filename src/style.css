@@ -75,3 +75,8 @@ a{
     justify-content: center;
     align-items: center;
   }
+.main-img-wrapper-mobile img{
+    height: 100% !important;
+    width: 100%;
+    object-fit: cover;
+}

@@ -3,7 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./public/style.css" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="src/slick-styles/slick.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="src/slick-styles/slick-theme.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <title>Document</title>
   </head>
   <body class="pb-[100.16px] max-xs:overflow-x-hidden">
@@ -158,54 +166,88 @@
     </section>
     <section class="flex flex-col gap-[16px] pb-[16px]">
       <div class="flex flex-col gap-[7px] md:hidden">
-        <div id="main-img-wrapper" class="relative">
-          <img
-            src="/src/assets/main.jpg"
-            alt=""
-            class="main-img object-cover h-[100%] w-[100%] max-xs:h-[239px]"
-          />
-          <button
-            class="bg-white w-[24.3px] h-[24px] absolute top-[107px] left-[15px] rounded-[50%] flex justify-center items-center"
-          >
-            <img src="/src/assets/chevorLeft.svg" />
+        <div id="img-wrapper-mobile" class="relative">
+          <!-- Custom Previous Button -->
+          <button class="slick-prev">
+            <img src="/src/assets/chevorLeft.svg" class="object-cover" />
           </button>
-          <button
-            class="bg-white w-[24.3px] h-[24px] absolute top-[107px] right-[15px] rounded-[50%] flex justify-center items-center"
-          >
-            <img src="/src/assets/chevronRight.png" />
+
+          <!-- Custom Next Button -->
+          <button class="slick-next">
+            <img src="/src/assets/chevronRight.svg" class="object-cover" />
           </button>
-        </div>
-        <div class="flex gap-[3px] overflow-x-auto">
-          <img
-            src="/src/assets/image-1.png"
-            class="h-[56px] w-[84px] flex-shrink-0 object-cover"
-            alt=""
-          />
-          <img
-            src="/src/assets/image-2.png"
-            class="h-[56px] w-[84px] flex-shrink-0 object-cover"
-            alt=""
-          />
-          <img
-            src="/src/assets/image-3.png"
-            class="h-[56px] w-[84px] flex-shrink-0 object-cover"
-            alt=""
-          />
-          <img
-            src="/src/assets/image-4.png"
-            class="h-[56px] w-[84px] flex-shrink-0 object-cover"
-            alt=""
-          />
-          <img
-            src="/src/assets/image-5.png"
-            class="h-[56px] w-[84px] flex-shrink-0 object-cover"
-            alt=""
-          />
-          <img
-            src="/src/assets/image-6.png"
-            class="h-[56px] w-[84px] flex-shrink-0 object-cover"
-            alt=""
-          />
+
+          <!-- Main Slider -->
+          <div class="slick-slider slick-list">
+            <!-- Main Slider Images -->
+            <div>
+              <img
+                src="/src/assets/main.jpg"
+                alt=""
+                class="main-img object-cover h-[100%] w-[100%]"
+              />
+            </div>
+            <div>
+              <img
+                src="/src/assets/image-1.png"
+                alt=""
+                class="main-img object-cover h-[100%] w-[100%]"
+              />
+            </div>
+            <div>
+              <img
+                src="/src/assets/image-2.png"
+                alt=""
+                class="main-img object-cover h-[100%] w-[100%]"
+              />
+            </div>
+            <div>
+              <img
+                src="/src/assets/image-3.png"
+                alt=""
+                class="main-img object-cover h-[100%] w-[100%]"
+              />
+            </div>
+            <div>
+              <img
+                src="/src/assets/image-4.png"
+                alt=""
+                class="main-img object-cover h-[100%] w-[100%]"
+              />
+            </div>
+            <div>
+              <img
+                src="/src/assets/image-5.png"
+                alt=""
+                class="main-img object-cover h-[100%] w-[100%]"
+              />
+            </div>
+          </div>
+
+          <!-- Navigation Slider -->
+          <div class="nav-container">
+            <div class="slider-nav">
+              <!-- Thumbnails for Navigation -->
+              <div class="h-[56px] w-[84px] flex-shrink-0 object-cover">
+                <img src="/src/assets/main.jpg" alt="" />
+              </div>
+              <div class="h-[56px] w-[84px] flex-shrink-0 object-cover">
+                <img src="/src/assets/image-1.png" alt="" />
+              </div>
+              <div class="h-[56px] w-[84px] flex-shrink-0 object-cover">
+                <img src="/src/assets/image-2.png" alt="" />
+              </div>
+              <div class="h-[56px] w-[84px] flex-shrink-0 object-cover">
+                <img src="/src/assets/image-3.png" alt="" />
+              </div>
+              <div class="h-[56px] w-[84px] flex-shrink-0 object-cover">
+                <img src="/src/assets/image-4.png" alt="" />
+              </div>
+              <div class="h-[56px] w-[84px] flex-shrink-0 object-cover">
+                <img src="/src/assets/image-5.png" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="flex gap-[47px] px-[16px] md:hidden">
@@ -628,53 +670,103 @@
       <section class="max-w-[738px] flex flex-col gap-[30px]">
         <div class="flex flex-col gap-[10px] max-xs:hidden">
           <div id="main-img-wrapper" class="relative">
-            <img
-              src="/src/assets/main preview pic.png"
-              alt=""
-              class="main-img object-cover h-[100%] w-[100%]"
-            />
-            <button
-              class="bg-white w-[24.3px] h-[24px] absolute top-[204.3px] left-[15px] rounded-[50%] flex justify-center items-center"
-            >
-              <img src="/src/assets/chevorLeft.svg" />
+            <button class="slick-prev">
+              <img src="/src/assets/chevorLeft.svg" class="object-cover" />
             </button>
-            <button
-              class="bg-white w-[24.3px] h-[24px] absolute top-[204.3px] right-[15px] rounded-[50%] flex justify-center items-center"
-            >
-              <img src="/src/assets/chevronRight.png" />
+            <button class="slick-next">
+              <img src="/src/assets/chevronRight.svg" class="object-cover" />
             </button>
+
+            <div class="slick-slider slick-list">
+              <div>
+                <img
+                  src="/src/assets/main preview pic.png"
+                  alt=""
+                  class="main-img object-cover h-[100%] w-[100%]"
+                />
+              </div>
+              <div>
+                <img
+                  src="/src/assets/image-1.png"
+                  alt=""
+                  class="main-img object-cover h-[100%] w-[100%]"
+                />
+              </div>
+              <div>
+                <img
+                  src="/src/assets/image-2.png"
+                  alt=""
+                  class="main-img object-cover h-[100%] w-[100%]"
+                />
+              </div>
+              <div>
+                <img
+                  src="/src/assets/image-3.png"
+                  alt=""
+                  class="main-img object-cover h-[100%] w-[100%]"
+                />
+              </div>
+              <div>
+                <img
+                  src="/src/assets/image-4.png"
+                  alt=""
+                  class="main-img object-cover h-[100%] w-[100%]"
+                />
+              </div>
+              <div>
+                <img
+                  src="/src/assets/image-5.png"
+                  alt=""
+                  class="main-img object-cover h-[100%] w-[100%]"
+                />
+              </div>
+            </div>
           </div>
-          <div class="grid grid-cols-6 gap-[10px]">
-            <img
-              src="/src/assets/image-1.png"
-              class="h-[80px] w-[100%]"
-              alt=""
-            />
-            <img
-              src="/src/assets/image-2.png"
-              class="h-[80px] w-[100%]"
-              alt=""
-            />
-            <img
-              src="/src/assets/image-3.png"
-              class="h-[80px] w-[100%]"
-              alt=""
-            />
-            <img
-              src="/src/assets/image-4.png"
-              class="h-[80px] w-[100%]"
-              alt=""
-            />
-            <img
-              src="/src/assets/image-5.png"
-              class="h-[80px] w-[100%]"
-              alt=""
-            />
-            <img
-              src="/src/assets/image-6.png"
-              class="h-[80px] w-[100%]"
-              alt=""
-            />
+          <div class="nav-container">
+            <div class="slider-nav flex justify-between">
+              <div class="h-[80px] w-[114px]">
+                <img
+                  src="/src/assets/main preview pic.png"
+                  alt=""
+                  class="main-img object-cover h-[100%] w-[100%]"
+                />
+              </div>
+              <div class="h-[80px] w-[114px]">
+                <img
+                  src="/src/assets/image-1.png"
+                  alt=""
+                  class="main-img object-cover h-[100%] w-[100%]"
+                />
+              </div>
+              <div class="h-[80px] w-[114px]">
+                <img
+                  src="/src/assets/image-2.png"
+                  alt=""
+                  class="main-img object-cover h-[100%] w-[100%]"
+                />
+              </div>
+              <div class="h-[80px] w-[114px]">
+                <img
+                  src="/src/assets/image-3.png"
+                  alt=""
+                  class="main-img object-cover h-[100%] w-[100%]"
+                />
+              </div>
+              <div class="h-[80px] w-[114px]">
+                <img
+                  src="/src/assets/image-4.png"
+                  alt=""
+                  class="main-img object-cover h-[100%] w-[100%]"
+                />
+              </div>
+              <div class="h-[80px] w-[114px]">
+                <img
+                  src="/src/assets/image-5.png"
+                  alt=""
+                  class="main-img object-cover h-[100%] w-[100%]"
+                />
+              </div>
+            </div>
           </div>
         </div>
         <div class="grid grid-cols-5 gap-[53.75px]">
@@ -1172,6 +1264,46 @@
 
       document.querySelectorAll(".showContactsBtn").forEach((button) => {
         button.addEventListener("click", handleButtonClick);
+      });
+      $(document).ready(function () {
+        $("#main-img-wrapper .slick-slider").slick({
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1100,
+          adaptiveHeight: true,
+          prevArrow: $("#main-img-wrapper .slick-prev"),
+          nextArrow: $("#main-img-wrapper .slick-next"),
+        });
+        $("#main-img-wrapper .slider-nav").slick({
+          slidesToShow: 5,
+          asNavFor: "#main-img-wrapper .slick-slider",
+          focusOnSelect: true,
+          autoplay: false,
+          centerMode: true,
+        });
+        $("#img-wrapper-mobile .slick-slider").slick({
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: false,
+          arrows: true,
+          prevArrow: $("#img-wrapper-mobile .slick-prev"),
+          nextArrow: $("#img-wrapper-mobile .slick-next"),
+          asNavFor: "#img-wrapper-mobile .slider-nav",
+        });
+
+        $("#img-wrapper-mobile .slider-nav").slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          asNavFor: "#img-wrapper-mobile .slick-slider",
+          focusOnSelect: true,
+          autoplay: false,
+          centerMode: true,
+        });
       });
     </script>
   </body>
