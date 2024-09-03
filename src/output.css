@@ -566,6 +566,12 @@ video {
   }
 }
 
+@media (min-width: 481px){
+  .container{
+    max-width: 481px;
+  }
+}
+
 @media (min-width: 1200px){
   .container{
     max-width: 1200px;
@@ -641,10 +647,6 @@ video {
   height: 66px;
 }
 
-.h-\[80px\]{
-  height: 80px;
-}
-
 .h-\[85px\]{
   height: 85px;
 }
@@ -655,10 +657,6 @@ video {
 
 .w-\[108px\]{
   width: 108px;
-}
-
-.w-\[114px\]{
-  width: 114px;
 }
 
 .w-\[115px\]{
@@ -846,10 +844,6 @@ video {
   gap: 43px;
 }
 
-.gap-\[47px\]{
-  gap: 47px;
-}
-
 .gap-\[4px\]{
   gap: 4px;
 }
@@ -864,10 +858,6 @@ video {
 
 .gap-\[6px\]{
   gap: 6px;
-}
-
-.gap-\[7px\]{
-  gap: 7px;
 }
 
 .gap-\[8px\]{
@@ -986,6 +976,11 @@ video {
   padding-right: 16px;
 }
 
+.px-\[20px\]{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .px-\[2px\]{
   padding-left: 2px;
   padding-right: 2px;
@@ -1073,8 +1068,12 @@ video {
   padding-top: 20px;
 }
 
-.pt-\[30px\]{
-  padding-top: 30px;
+.pt-\[9px\]{
+  padding-top: 9px;
+}
+
+.text-center{
+  text-align: center;
 }
 
 .text-right{
@@ -1322,6 +1321,101 @@ a{
      object-fit: cover;
 }
 
+@media (max-width: 480px){
+  .mobile\:ml-auto{
+    margin-left: auto;
+  }
+
+  .mobile\:mt-\[33px\]{
+    margin-top: 33px;
+  }
+
+  .mobile\:block{
+    display: block;
+  }
+
+  .mobile\:hidden{
+    display: none;
+  }
+
+  .mobile\:h-\[28px\]{
+    height: 28px;
+  }
+
+  .mobile\:w-\[24px\]{
+    width: 24px;
+  }
+
+  .mobile\:w-\[73px\]{
+    width: 73px;
+  }
+
+  .mobile\:max-w-\[100\%\]{
+    max-width: 100%;
+  }
+
+  .mobile\:gap-\[1px\]{
+    gap: 1px;
+  }
+
+  .mobile\:gap-\[20px\]{
+    gap: 20px;
+  }
+
+  .mobile\:gap-\[7px\]{
+    gap: 7px;
+  }
+
+  .mobile\:overflow-x-hidden{
+    overflow-x: hidden;
+  }
+
+  .mobile\:object-cover{
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .mobile\:py-\[13px\]{
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+
+  .mobile\:pl-\[14px\]{
+    padding-left: 14px;
+  }
+
+  .mobile\:pr-\[20px\]{
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 1200px){
+  .desktop\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .desktop\:grid{
+    display: grid;
+  }
+
+  .desktop\:hidden{
+    display: none;
+  }
+
+  .desktop\:grid-cols-\[738px_419px\]{
+    grid-template-columns: 738px 419px;
+  }
+
+  .desktop\:justify-between{
+    justify-content: space-between;
+  }
+
+  .desktop\:gap-\[30px\]{
+    gap: 30px;
+  }
+}
+
 @media (min-width: 480px){
   .xs\:hidden{
     display: none;
@@ -1336,61 +1430,5 @@ a{
 
   .md\:hidden{
     display: none;
-  }
-
-  .md\:justify-between{
-    justify-content: space-between;
-  }
-}
-
-@media (max-width: 480px){
-  .max-xs\:ml-auto{
-    margin-left: auto;
-  }
-
-  .max-xs\:mt-\[33px\]{
-    margin-top: 33px;
-  }
-
-  .max-xs\:hidden{
-    display: none;
-  }
-
-  .max-xs\:h-\[28px\]{
-    height: 28px;
-  }
-
-  .max-xs\:w-\[24px\]{
-    width: 24px;
-  }
-
-  .max-xs\:w-\[73px\]{
-    width: 73px;
-  }
-
-  .max-xs\:gap-\[20px\]{
-    gap: 20px;
-  }
-
-  .max-xs\:overflow-x-hidden{
-    overflow-x: hidden;
-  }
-
-  .max-xs\:object-cover{
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-
-  .max-xs\:py-\[13px\]{
-    padding-top: 13px;
-    padding-bottom: 13px;
-  }
-
-  .max-xs\:pl-\[14px\]{
-    padding-left: 14px;
-  }
-
-  .max-xs\:pr-\[20px\]{
-    padding-right: 20px;
   }
 }

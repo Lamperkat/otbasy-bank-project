@@ -112,7 +112,7 @@
     .slider-nav .slick-track{
 
         display: flex;
-        margin-top: 7px;
+        gap: 3px;
     }
     .slider-nav  .slick-slide{
         width: 84px !important;
@@ -153,5 +153,8 @@
     border: 1px solid transparent;
 }
 .slick-arrow.slick-hidden {
+    display: none;
+}
+.slick-arrow{
     display: none;
 }

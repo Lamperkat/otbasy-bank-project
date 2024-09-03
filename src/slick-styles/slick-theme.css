@@ -212,3 +212,11 @@
     opacity: .75;
     color: black;
 }
+.slider-nav .slick-prev,
+.slider-nav .slick-next{
+    display: none !important;
+}
+.slider-nav img:hover{
+    opacity: .9;
+    cursor: pointer;
+}

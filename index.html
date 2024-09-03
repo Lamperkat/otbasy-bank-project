@@ -14,12 +14,12 @@
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <title>Document</title>
   </head>
-  <body class="pb-[100.16px] max-xs:overflow-x-hidden">
-    <nav class="border-b-[0.75px] border-midGray max-xs:mt-[33px]">
+  <body class="pb-[100.16px] mobile:overflow-x-hidden">
+    <nav class="border-b-[0.75px] border-midGray mobile:mt-[33px]">
       <div
-        class="container mx-auto flex md:justify-between items-center pt-[18px] pb-[16px] max-xs:gap-[20px] max-xs:py-[13px] max-xs:pr-[20px] max-xs:pl-[14px]"
+        class="container  mx-auto flex desktop:justify-between items-center pt-[18px] pb-[16px] mobile:gap-[20px] mobile:py-[13px] mobile:pr-[20px] mobile:pl-[14px]"
       >
-        <button class="md:hidden max-xs:w-[24px]">
+        <button class="md:hidden mobile:w-[24px]">
           <img
             src="/src/assets/Menu.svg"
             alt=""
@@ -29,15 +29,15 @@
         <img
           src="/src/assets/logo.png"
           alt="Company Logo"
-          class="h-[26px] object-cover max-xs:hidden"
+          class="h-[26px] object-cover mobile:hidden"
         />
         <img
           src="/src/assets/Baspana_logo.svg"
           alt="Company Logo"
-          class="object-cover xs:hidden max-xs:h-[28px] max-xs:w-[73px] max-xs:object-cover"
+          class="object-cover xs:hidden mobile:h-[28px] mobile:w-[73px] mobile:object-cover"
         />
         <ul
-          class="flex justify-between items-center gap-[24px] h-[26px] max-xs:hidden"
+          class="flex justify-between items-center gap-[24px] h-[26px] mobile:hidden "
         >
           <li class="h-[24px]">
             <a href="#" class="text-sm block h-[20px]">Программы банка</a>
@@ -59,13 +59,13 @@
             >
           </li>
         </ul>
-        <div class="flex gap-[34px] items-center max-xs:ml-auto">
+        <div class="flex gap-[34px] items-center mobile:ml-auto">
           <button
-            class="btn btn-secondary text-[12px] leading-[16.8px] max-xs:hidden"
+            class="btn btn-secondary text-[12px] leading-[16.8px] mobile:hidden"
           >
             + Разместить объявление
           </button>
-          <div class="flex items-center gap-[12px] max-xs:hidden">
+          <div class="flex items-center gap-[12px] mobile:hidden">
             <img src="/src/assets/Fill.svg" alt="" />
             <img src="/src/assets/Notifiaction.svg" alt="" />
           </div>
@@ -82,7 +82,7 @@
           </div>
         </div>
         <button
-          class="btn btn-primary text-sm leading-[19.6px] flex gap-[8px] items-center max-xs:hidden"
+          class="btn btn-primary text-sm leading-[19.6px] flex gap-[8px] items-center mobile:hidden"
         >
           Войти
           <div class="h-[24px] w-[24px] flex items-center justify-center">
@@ -107,7 +107,7 @@
         />
       </div>
     </div>
-    <div class="container md:mx-auto pt-[20px] pb-[29px] max-xs:hidden">
+    <div class="container md:mx-auto pt-[20px] pb-[29px] mobile:hidden">
       <div class="flex gap-[8px] items-center">
         <span class="text-xs">Главная</span>
         <span class="text-xs">/</span>
@@ -117,7 +117,7 @@
       </div>
     </div>
     <section
-      class="container md:mx-auto flex pb-[16.3px] gap-[42px] max-xs:hidden"
+      class="container md:mx-auto flex pb-[16.3px] gap-[42px] mobile:hidden"
       id="infoTitle"
     >
       <div class="max-w-[738px] flex-1 flex-col gap-[8px]">
@@ -128,7 +128,7 @@
           Казахстан, Жамбылская область, Тараз, 15-й микрорайон
         </p>
       </div>
-      <div class="flex items-center justify-between max-w-[420px] flex-1">
+      <div class="flex items-center justify-between max-w-[420px] flex-1 mobile:hidden">
         <button
           class="btn btn-additional flex items-center gap-[8px] text-sm py-[5.5] pl-[16px] pr-[20px]"
         >
@@ -148,7 +148,7 @@
         </div>
       </div>
     </section>
-    <section class="md:hidden px-[16px] pb-[16px]">
+    <section class=" px-[16px] pb-[16px] desktop:hidden mobile:block">
       <h1 class="text-lg font-medium text-[#333839]">38 800 000 ₸</h1>
       <h1 class="text-base text-[#333839]">5-комнатный дом, 8 сот.</h1>
       <p class="text-sm text-[#7A7E81]">
@@ -164,692 +164,175 @@
         </div>
       </div>
     </section>
-    <section class="flex flex-col gap-[16px] pb-[16px]">
-      <div class="flex flex-col gap-[7px] md:hidden">
-        <div id="img-wrapper-mobile" class="relative">
-          <!-- Custom Previous Button -->
-          <button class="slick-prev">
-            <img src="/src/assets/chevorLeft.svg" class="object-cover" />
-          </button>
-
-          <!-- Custom Next Button -->
-          <button class="slick-next">
-            <img src="/src/assets/chevronRight.svg" class="object-cover" />
-          </button>
-
-          <!-- Main Slider -->
-          <div class="slick-slider slick-list">
-            <!-- Main Slider Images -->
-            <div>
-              <img
-                src="/src/assets/main.jpg"
-                alt=""
-                class="main-img object-cover h-[100%] w-[100%]"
-              />
-            </div>
-            <div>
-              <img
-                src="/src/assets/image-1.png"
-                alt=""
-                class="main-img object-cover h-[100%] w-[100%]"
-              />
-            </div>
-            <div>
-              <img
-                src="/src/assets/image-2.png"
-                alt=""
-                class="main-img object-cover h-[100%] w-[100%]"
-              />
-            </div>
-            <div>
-              <img
-                src="/src/assets/image-3.png"
-                alt=""
-                class="main-img object-cover h-[100%] w-[100%]"
-              />
-            </div>
-            <div>
-              <img
-                src="/src/assets/image-4.png"
-                alt=""
-                class="main-img object-cover h-[100%] w-[100%]"
-              />
-            </div>
-            <div>
-              <img
-                src="/src/assets/image-5.png"
-                alt=""
-                class="main-img object-cover h-[100%] w-[100%]"
-              />
-            </div>
-          </div>
-
-          <!-- Navigation Slider -->
-          <div class="nav-container">
-            <div class="slider-nav">
-              <!-- Thumbnails for Navigation -->
-              <div class="h-[56px] w-[84px] flex-shrink-0 object-cover">
-                <img src="/src/assets/main.jpg" alt="" />
-              </div>
-              <div class="h-[56px] w-[84px] flex-shrink-0 object-cover">
-                <img src="/src/assets/image-1.png" alt="" />
-              </div>
-              <div class="h-[56px] w-[84px] flex-shrink-0 object-cover">
-                <img src="/src/assets/image-2.png" alt="" />
-              </div>
-              <div class="h-[56px] w-[84px] flex-shrink-0 object-cover">
-                <img src="/src/assets/image-3.png" alt="" />
-              </div>
-              <div class="h-[56px] w-[84px] flex-shrink-0 object-cover">
-                <img src="/src/assets/image-4.png" alt="" />
-              </div>
-              <div class="h-[56px] w-[84px] flex-shrink-0 object-cover">
-                <img src="/src/assets/image-5.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="flex gap-[47px] px-[16px] md:hidden">
-        <div class="flex flex-col gap-[6px] items-center justify-center">
-          <span class="text-sm text-[#7A7E81]">Участок</span>
-          <span class="text-sm font-medium text-[#333839]">8 сот.</span>
-        </div>
-        <div class="flex flex-col gap-[6px] items-center">
-          <span class="text-sm text-[#7A7E81]">Площадь дома</span>
-          <span class="text-sm font-medium text-[#333839]">124 м&sup2</span>
-        </div>
-        <div class="flex flex-col gap-[6px] items-center">
-          <span class="text-sm text-[#7A7E81]">Этажей в доме</span>
-          <span class="text-sm font-medium text-[#333839]">2</span>
-        </div>
-      </div>
-    </section>
-    <div class="underLine md:hidden"></div>
-    <section class="flex flex-col gap-[30px] pt-[30px] px-[16px] md:hidden">
-      <div class="guaranteeSection flex flex-col gap-[10px]">
-        <h4 class="font-medium text-lg">Гарантия</h4>
-        <div class="flex flex-col">
-          <div class="flex gap-[6px] h-[24px] items-center">
-            <img src="/src/assets/checkIcon.svg" alt="" />
-            <span class="text-primary text-sm py-[2px]"
-              >Подходит под залог</span
-            >
-            <img
-              src="/src/assets/info_icon.svg"
-              alt=""
-              class="h-[16px] w-[16px]"
-            />
-          </div>
-          <div class="flex gap-[6px] h-[24px] items-center">
-            <img src="/src/assets/checkIcon.svg" alt="" />
-            <span class="text-primary text-sm py-[2px]"
-              >Имеется гарантия КЖК</span
-            >
-            <img
-              src="/src/assets/info_icon.svg"
-              class="h-[16px] w-[16px]"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-      <div id="description" class="flex flex-col gap-[10px]">
-        <h4 class="font-medium text-lg text-[#333839]">Описание</h4>
-        <p class="text-base text-[#333839]">
-          В составе квартир предусматриваются жилые комнаты, кухни, санузлы,
-          балконы. Фундаменты – монолитные железобетонные, стены тех подполья -
-          железобетонные монолитные. Наружные стены и перегородки – сборные
-          трехслойные наружные стеновые несущие панели, перекрытия – сборные
-          железобетонные панели, лестницы - монолитные железобетонные.
-        </p>
-        <div class="flex gap-[6px] h-[26px]">
-          <span class="text-primary text-sm underline"> Читать больше </span>
-          <div
-            class="h-[24px] w-[24px] inline-flex items-center justify-center"
-          >
-            <img src="/src/assets/ChevronDown.svg" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <div id="map" class="md:hidden py-[30px]">
-      <img src="/src/assets/map.png" class="h-[190px] object-cover" alt="" />
-    </div>
-    <section class="md:hidden px-[16px] flex flex-col gap-[30px]">
-      <div class="grid grid-cols-1 gap-y-[20px]">
-        <h4 class="text-[#333839] text-lg font-medium">Общая информация</h4>
-        <div class="flex justify-between gap-[4px]">
-          <span class="text-sm text-[#7a7e81]">Год постройки</span>
-          <span
-            class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
-          ></span>
-          <span class="text-sm font-medium text-[#333839] text-right"
-            >2007 год</span
-          >
-        </div>
-        <div class="flex justify-between h-[20px] items-center">
-          <span class="text-sm text-[#7a7e81]">Мебель</span>
-          <span
-            class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[40%] self-end justify-self-end"
-          ></span>
-          <span class="text-sm font-medium text-[#333839] text-right max-w-fit"
-            >Полностью меблирована</span
-          >
-        </div>
-        <div class="flex justify-between h-[20px] items-center">
-          <span class="text-sm text-[#7a7e81]">Материал стен</span>
-          <span
-            class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
-          ></span>
-          <span class="text-sm font-medium text-[#333839] text-right"
-            >Панельный</span
-          >
-        </div>
-        <div class="flex justify-between h-[20px] items-center">
-          <span class="text-sm text-[#7a7e81]">Ограждение</span>
-          <span
-            class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
-          ></span>
-          <span class="text-sm font-medium text-[#333839] text-right"
-            >Не огорожен</span
-          >
-        </div>
-        <div class="flex justify-between h-[20px] items-center">
-          <span class="text-sm text-[#7a7e81]">Высота потолка</span>
-          <span
-            class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
-          ></span>
-          <span class="text-sm font-medium text-[#333839]">3 м</span>
-        </div>
-
-        <div class="flex justify-between h-[20px] items-center">
-          <span class="text-sm text-[#7a7e81]">Интернет</span>
-          <span
-            class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
-          ></span>
-          <span class="text-sm font-medium text-[#333839]">ADSL</span>
-        </div>
-        <div class="flex justify-between h-[20px] items-center">
-          <span class="text-sm text-[#7a7e81]">Состояние объекта</span>
-          <span
-            class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
-          ></span>
-          <span class="text-sm font-medium text-[#333839]text-right"
-            >Хорошее</span
-          >
-        </div>
-        <div class="flex justify-between h-[20px] items-center">
-          <span class="text-sm text-[#7a7e81]">Телефон</span>
-          <span
-            class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
-          ></span>
-          <span class="text-sm font-medium text-[#333839] text-right"
-            >Отдельный</span
-          >
-        </div>
-        <div class="flex justify-between h-[20px] items-center">
-          <span class="text-sm text-[#7a7e81]">Санузел</span>
-          <span
-            class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
-          ></span>
-          <span class="text-sm font-medium text-[#333839] text-right"
-            >Совмещенный</span
-          >
-        </div>
-        <div class="flex justify-between h-[20px] items-center">
-          <span class="text-sm text-[#7a7e81]">Безопасность</span>
-          <span
-            class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
-          ></span>
-          <span class="text-sm font-medium text-[#333839]"
-            >Решетки на окнах, домофон, охрана</span
-          >
-        </div>
-        <div class="flex justify-between h-[20px] items-center">
-          <span class="text-sm text-[#7a7e81]">Дополнительно</span>
-          <span
-            class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
-          ></span>
-          <span class="text-sm font-medium text-[#333839] text-right"
-            >Бассейн</span
-          >
-        </div>
-      </div>
-      <div class="grid grid-cols-1 gap-y-[20px]">
-        <h4 class="text-[#333839] text-lg font-medium">Коммуникации</h4>
-        <div class="flex justify-between gap-[4px]">
-          <span class="text-sm text-[#7a7e81]">Тип отопления</span>
-          <span
-            class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
-          ></span>
-          <span class="text-sm font-medium text-[#333839] text-right"
-            >На жидком топливе</span
-          >
-        </div>
-        <div class="flex justify-between gap-[4px]">
-          <span class="text-sm text-[#7a7e81]">Канализация</span>
-          <span
-            class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
-          ></span>
-          <span
-            class="text-sm font-medium text-[#333839] text-right antialiased"
-            >Есть возможность подключения</span
-          >
-        </div>
-        <div class="flex justify-between gap-[4px]">
-          <span class="text-sm text-[#7a7e81]">Электричество</span>
-          <span
-            class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
-          ></span>
-          <span class="text-sm font-medium text-[#333839] text-right"
-            >Есть возможность подключения</span
-          >
-        </div>
-        <div class="flex justify-between gap-[4px]">
-          <span class="text-sm text-[#7a7e81]">Водоснабжение</span>
-          <span
-            class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[30%] self-end justify-self-end"
-          ></span>
-          <span class="text-sm font-medium text-[#333839] text-right"
-            >Есть возможность подключения</span
-          >
-        </div>
-        <div class="flex justify-between gap-[4px]">
-          <span class="text-sm text-[#7a7e81]">Газ</span>
-          <span
-            class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
-          ></span>
-          <span class="text-sm font-medium text-[#333839] text-right"
-            >Есть возможность подключения</span
-          >
-        </div>
-      </div>
-
-      <div class="card bg-[#EBEFF1]">
-        <div class="flex gap-[10px] items-center">
-          <div class="iconWrapper">
-            <img src="/src/assets/User.svg" alt="" class="p-[10px]" />
-          </div>
-          <div class="flex flex-col gap-[2px]">
-            <h4 class="text-base text-[#333839] font-medium">Фамилия Имя</h4>
-            <span class="text-sm text-[#ADB0B2]">Собственник</span>
-          </div>
-        </div>
-        <button
-          id="mobileShowContactsBtn"
-          class="showContactsBtn btn btn-large btn-additional text-base"
-        >
-          Показать контакты
-        </button>
-      </div>
-      <div class="card">
-        <div class="flex items-center gap-[13px] h-[66px]">
-          <img src="/src/assets/logoArea.svg" alt="" />
-          <h4 class="text-base text-[#333839] font-medium h-[66px]">
-            Получите консультацию прямо сейчас и оформите ONLINE ипотеку со
-            скидкой 50%
-          </h4>
-        </div>
-        <div class="flex flex-col gap-[10px]">
-          <button class="btn btn-secondary btn-large text-base">
-            Заказать обратный звонок
-          </button>
-          <div class="flex flex-col gap-[4px] items-center">
-            <span class="text-[#333839] text-sm">или</span>
-            <span class="text-[#333839] text-sm">заполните анкету </span>
-            <span class="text-[#333839] text-sm"
-              >и наш консультант Вам перезвонит</span
-            >
-          </div>
-          <button class="btn btn-large btn-additional text-base">
-            Заказать консультацию
-          </button>
-        </div>
-      </div>
-      <div class="flex flex-col gap-[10px]">
-        <h4 class="text-[#333839] text-lg font-medium">
-          Новые объявления на сайте
-        </h4>
-        <div class="flex gap-[9px] items-center overflow-x-auto">
-          <div
-            class="flex flex-col w-[165px] flex-shrink-0 rounded-[6px] border-midGray border-[1px] gap-[11.28px]"
-          >
-            <img
-              src="/src/assets/fc847f0d787cd39e5143478204ba4258.png"
-              alt=""
-              class="rounded-tl-[6px] rounded-tr-[6px] h-[85px] object-cover"
-            />
-            <div class="px-[15px] flex flex-col gap-[4px] pb-[14.51px]">
-              <span class="text-xs font-semibold text-[#2C3537]"
-                >39 900 000 ₸</span
-              >
-              <span class="text-[11px] text-[#333839]"
-                >3-комнатная квартира, 58.1 м&sup2;, 6/6 этаж</span
-              >
-              <span class="text-[10px] text-[#7A7E81]"
-                >г. Усть-Каменогорск</span
-              >
-              <div class="text-[10px] flex gap-[4px]">
-                <span class="text-[#7A7E81]">Дешевле</span>
-                <span class="text-[#008F91]"> на 13,2% </span>
-              </div>
-            </div>
-          </div>
-          <div
-            class="flex flex-col w-[165px] flex-shrink-0 rounded-[6px] border-midGray border-[1px] gap-[11.28px]"
-          >
-            <img
-              src="/src/assets/43c42b5d3f254b8617dedc7581e8932e.png"
-              alt=""
-              class="rounded-tl-[6px] rounded-tr-[6px] h-[85px] object-cover"
-            />
-            <div class="px-[15px] flex flex-col gap-[4px] pb-[14.51px]">
-              <span class="text-xs font-semibold text-[#2C3537]"
-                >39 900 000 ₸</span
-              >
-              <span class="text-[11px] text-[#333839]"
-                >3-комнатная квартира, 58.1 м&sup2;, 6/6 этаж</span
-              >
-              <span class="text-[10px] text-[#7A7E81]"
-                >г. Усть-Каменогорск</span
-              >
-              <div class="text-[10px] flex gap-[4px]">
-                <span class="text-[#7A7E81]">Дешевле</span>
-                <span class="text-[#008F91]"> на 13,2% </span>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="flex flex-col w-[165px] flex-shrink-0 rounded-[6px] border-midGray border-[1px] gap-[11.28px]"
-          >
-            <img
-              src="/src/assets/07580d2d1ce5534e5281939128410dd6.png"
-              alt=""
-              class="rounded-tl-[6px] rounded-tr-[6px] h-[85px] object-cover"
-            />
-            <div class="px-[15px] flex flex-col gap-[4px] pb-[14.51px]">
-              <span class="text-xs font-semibold text-[#2C3537]"
-                >39 900 000 ₸</span
-              >
-              <span class="text-[11px] text-[#333839]"
-                >3-комнатная квартира, 58.1 м&sup2;, 6/6 этаж</span
-              >
-              <span class="text-[10px] text-[#7A7E81]"
-                >г. Усть-Каменогорск</span
-              >
-              <div class="text-[10px] flex gap-[4px]">
-                <span class="text-[#7A7E81]">Дешевле</span>
-                <span class="text-[#008F91]"> на 13,2% </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="flex flex-col gap-[10px]">
-        <h4 class="text-[#333839] text-lg font-medium">Недавно смотрели</h4>
-        <div class="flex gap-[9px] items-center overflow-x-auto">
-          <div
-            class="flex flex-col w-[165px] flex-shrink-0 rounded-[6px] border-midGray border-[1px] gap-[11.28px]"
-          >
-            <img
-              src="/src/assets/fc847f0d787cd39e5143478204ba4258.png"
-              alt=""
-              class="rounded-tl-[6px] rounded-tr-[6px] h-[85px] object-cover"
-            />
-            <div class="px-[15px] flex flex-col gap-[4px] pb-[14.51px]">
-              <span class="text-xs font-semibold text-[#2C3537]"
-                >39 900 000 ₸</span
-              >
-              <span class="text-[11px] text-[#333839]"
-                >3-комнатная квартира, 58.1 м&sup2;, 6/6 этаж</span
-              >
-              <span class="text-[10px] text-[#7A7E81]"
-                >г. Усть-Каменогорск</span
-              >
-              <div class="text-[10px] flex gap-[4px]">
-                <span class="text-[#7A7E81]">Дешевле</span>
-                <span class="text-[#008F91]"> на 13,2% </span>
-              </div>
-            </div>
-          </div>
-          <div
-            class="flex flex-col w-[165px] flex-shrink-0 rounded-[6px] border-midGray border-[1px] gap-[11.28px]"
-          >
-            <img
-              src="/src/assets/43c42b5d3f254b8617dedc7581e8932e.png"
-              alt=""
-              class="rounded-tl-[6px] rounded-tr-[6px] h-[85px] object-cover"
-            />
-            <div class="px-[15px] flex flex-col gap-[4px] pb-[14.51px]">
-              <span class="text-xs font-semibold text-[#2C3537]"
-                >39 900 000 ₸</span
-              >
-              <span class="text-[11px] text-[#333839]"
-                >3-комнатная квартира, 58.1 м&sup2;, 6/6 этаж</span
-              >
-              <span class="text-[10px] text-[#7A7E81]"
-                >г. Усть-Каменогорск</span
-              >
-              <div class="text-[10px] flex gap-[4px]">
-                <span class="text-[#7A7E81]">Дешевле</span>
-                <span class="text-[#008F91]"> на 13,2% </span>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="flex flex-col w-[165px] flex-shrink-0 rounded-[6px] border-midGray border-[1px] gap-[11.28px]"
-          >
-            <img
-              src="/src/assets/07580d2d1ce5534e5281939128410dd6.png"
-              alt=""
-              class="rounded-tl-[6px] rounded-tr-[6px] h-[85px] object-cover"
-            />
-            <div class="px-[15px] flex flex-col gap-[4px] pb-[14.51px]">
-              <span class="text-xs font-semibold text-[#2C3537]"
-                >39 900 000 ₸</span
-              >
-              <span class="text-[11px] text-[#333839]"
-                >3-комнатная квартира, 58.1 м&sup2;, 6/6 этаж</span
-              >
-              <span class="text-[10px] text-[#7A7E81]"
-                >г. Усть-Каменогорск</span
-              >
-              <div class="text-[10px] flex gap-[4px]">
-                <span class="text-[#7A7E81]">Дешевле</span>
-                <span class="text-[#008F91]"> на 13,2% </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="container md:mx-auto flex gap-[43px] max-xs:hidden">
-      <section class="max-w-[738px] flex flex-col gap-[30px]">
-        <div class="flex flex-col gap-[10px] max-xs:hidden">
-          <div id="main-img-wrapper" class="relative">
+    <section class="flex flex-col gap-[16px] pb-[16px] container desktop:mx-auto" >
+      <div class="desktop:grid desktop:grid-cols-[738px_419px] gap-[43px] ">
+        <div class="flex flex-col gap-[30px] desktop:gap-[30px] mobile:max-w-[100%]  ">
+          <div id="main-img-wrapper" class="relative flex flex-col gap-[10px] mobile:gap-[7px] mobile:h-239px">
             <button class="slick-prev">
               <img src="/src/assets/chevorLeft.svg" class="object-cover" />
             </button>
             <button class="slick-next">
               <img src="/src/assets/chevronRight.svg" class="object-cover" />
             </button>
+            <div class="slick-slider slider-list">
+              <div class="h-[56px] w-[84px] flex-shrink-0 object-cover"><img class="main-img object-cover h-[100%] w-[100%]" src="src/assets/main preview pic.png".jpg" alt="Image 1"></div>
+              <div class="h-[56px] w-[84px] flex-shrink-0 object-cover"><img class="main-img object-cover h-[100%] w-[100%]" src="src/assets/image-2.png" alt="Image 2"></div>
+              <div class="h-[56px] w-[84px] flex-shrink-0 object-cover"><img class="main-img object-cover h-[100%] w-[100%]" src="src/assets/image-3.png" alt="Image 3"></div>
+              <div class="h-[56px] w-[84px] flex-shrink-0 object-cover"><img class="main-img object-cover h-[100%] w-[100%]" src="src/assets/image-4.png" alt="Image 4"></div>
+              <div class="h-[56px] w-[84px] flex-shrink-0 object-cover"><img class="main-img object-cover h-[100%] w-[100%]" src="src/assets/image-5.png" alt="Image 5"></div>
+              <div class="h-[56px] w-[84px] flex-shrink-0 object-cover"><img class="main-img object-cover h-[100%] w-[100%]" src="src/assets/image-6.png" alt="Image 6"></div>
+            </div>
+            <div class="slider-nav mobile:gap-[1px]">
+              <div><img src="src/assets/main preview pic.png" alt="Image 1"></div>
+              <div><img src="src/assets/image-2.png" alt="Image 2"></div>
+              <div><img src="src/assets/image-3.png" alt="Image 3"></div>
+              <div><img src="src/assets/image-4.png" alt="Image 4"></div>
+              <div><img src="src/assets/image-5.png" alt="Image 5"></div>
+              <div><img src="src/assets/image-6.png" alt="Image 6"></div>
+            </div>
+            <div class="flex justify-between pt-[9px] px-[16px] desktop:hidden">
+              <div class="flex flex-col gap-[6px] items-center justify-center">
+                <span class="text-sm text-[#7A7E81]  flex-1 text-center">Участок</span>
+                <span class="text-sm font-medium text-[#333839]">8 сот.</span>
+              </div>
+              <div class="flex flex-col  gap-[6px] items-center">
+                <span class="text-sm text-[#7A7E81] text-center flex-1">Площадь дома</span>
+                <span class="text-sm font-medium text-[#333839]">124 м&sup2</span>
+              </div>
+              <div class="flex flex-col  gap-[6px] items-center">
+                <span class="text-sm text-[#7A7E81] text-center  flex-1">Этажей в доме</span>
+                <span class="text-sm font-medium text-[#333839] text-center">2</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="grid grid-cols-5 gap-[53.75px] mobile:hidden">
+            <div class="flex flex-col gap-[6px] w-[115px] items-center">
+              <span class="text-sm text-[#7A7E81]">Площадь участка</span>
+              <span>8 сот.</span>
+            </div>
+            <div class="flex flex-col gap-[6px] items-center">
+              <span class="text-sm text-[#7A7E81]">Площадь дома</span>
+              <span>124 м&sup2</span>
+            </div>
+            <div class="flex flex-col gap-[6px] items-center">
+              <span class="text-sm text-[#7A7E81]">Площаль кухни</span>
+              <span>24 м&sup2</span>
+            </div>
+            <div class="flex flex-col gap-[6px] items-center">
+              <span class="text-sm text-[#7A7E81] w-[108px]">Жилая площадь</span>
+              <span>98 м&sup2</span>
+            </div>
+            <div class="flex flex-col gap-[6px] items-center">
+              <span class="text-sm text-[#7A7E81]">Этажей в доме</span>
+              <span>2</span>
+            </div>
 
-            <div class="slick-slider slick-list">
-              <div>
-                <img
-                  src="/src/assets/main preview pic.png"
-                  alt=""
-                  class="main-img object-cover h-[100%] w-[100%]"
-                />
-              </div>
-              <div>
-                <img
-                  src="/src/assets/image-1.png"
-                  alt=""
-                  class="main-img object-cover h-[100%] w-[100%]"
-                />
-              </div>
-              <div>
-                <img
-                  src="/src/assets/image-2.png"
-                  alt=""
-                  class="main-img object-cover h-[100%] w-[100%]"
-                />
-              </div>
-              <div>
-                <img
-                  src="/src/assets/image-3.png"
-                  alt=""
-                  class="main-img object-cover h-[100%] w-[100%]"
-                />
-              </div>
-              <div>
-                <img
-                  src="/src/assets/image-4.png"
-                  alt=""
-                  class="main-img object-cover h-[100%] w-[100%]"
-                />
-              </div>
-              <div>
-                <img
-                  src="/src/assets/image-5.png"
-                  alt=""
-                  class="main-img object-cover h-[100%] w-[100%]"
-                />
-              </div>
-            </div>
           </div>
-          <div class="nav-container">
-            <div class="slider-nav flex justify-between">
-              <div class="h-[80px] w-[114px]">
-                <img
-                  src="/src/assets/main preview pic.png"
-                  alt=""
-                  class="main-img object-cover h-[100%] w-[100%]"
-                />
-              </div>
-              <div class="h-[80px] w-[114px]">
-                <img
-                  src="/src/assets/image-1.png"
-                  alt=""
-                  class="main-img object-cover h-[100%] w-[100%]"
-                />
-              </div>
-              <div class="h-[80px] w-[114px]">
-                <img
-                  src="/src/assets/image-2.png"
-                  alt=""
-                  class="main-img object-cover h-[100%] w-[100%]"
-                />
-              </div>
-              <div class="h-[80px] w-[114px]">
-                <img
-                  src="/src/assets/image-3.png"
-                  alt=""
-                  class="main-img object-cover h-[100%] w-[100%]"
-                />
-              </div>
-              <div class="h-[80px] w-[114px]">
-                <img
-                  src="/src/assets/image-4.png"
-                  alt=""
-                  class="main-img object-cover h-[100%] w-[100%]"
-                />
-              </div>
-              <div class="h-[80px] w-[114px]">
-                <img
-                  src="/src/assets/image-5.png"
-                  alt=""
-                  class="main-img object-cover h-[100%] w-[100%]"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid grid-cols-5 gap-[53.75px]">
-          <div class="flex flex-col gap-[6px] w-[115px] items-center">
-            <span class="text-sm text-[#7A7E81]">Площадь участка</span>
-            <span>8 сот.</span>
-          </div>
-          <div class="flex flex-col gap-[6px] items-center">
-            <span class="text-sm text-[#7A7E81]">Площадь дома</span>
-            <span>124 м&sup2</span>
-          </div>
-          <div class="flex flex-col gap-[6px] items-center">
-            <span class="text-sm text-[#7A7E81]">Площаль кухни</span>
-            <span>24 м&sup2</span>
-          </div>
-          <div class="flex flex-col gap-[6px] items-center">
-            <span class="text-sm text-[#7A7E81] w-[108px]">Жилая площадь</span>
-            <span>98 м&sup2</span>
-          </div>
-          <div class="flex flex-col gap-[6px] items-center">
-            <span class="text-sm text-[#7A7E81]">Этажей в доме</span>
-            <span>2</span>
-          </div>
-        </div>
-        <div class="underLine"></div>
-        <div class="guaranteeSection flex flex-col gap-[15px]">
-          <h4 class="font-medium text-lg">Гарантия</h4>
-          <div class="flex items-center gap-[30px]">
-            <div class="flex gap-[6px] h-[24px] items-center">
-              <img src="/src/assets/checkIcon.svg" alt="" />
-              <span class="text-primary text-sm py-[2px]"
-                >Подходит под залог</span
-              >
-              <img
-                src="/src/assets/info_icon.svg"
-                alt=""
-                class="h-[16px] w-[16px]"
-              />
-            </div>
-            <div class="flex gap-[6px] h-[24px] items-center">
-              <img src="/src/assets/checkIcon.svg" alt="" />
-              <span class="text-primary text-sm py-[2px]"
-                >Имеется гарантия КЖК</span
-              >
-              <img
-                src="/src/assets/info_icon.svg"
-                class="h-[16px] w-[16px]"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-        <div class="underLine"></div>
-        <div id="description" class="flex flex-col gap-[15px]">
-          <h4 class="font-medium text-lg text-[#333839]">Описание</h4>
-          <p class="text-base text-[#333839]">
-            Срочно! Продам в экологически чистом районе - просторный, уютный Дом
-            в 100 кв м, участок 7 соток (есть возможность приватизации
-            дополнительно 3 соток земли). В доме : Зал, спальня, кухня, санузел
-            и коридор.
-            <br />
-            <br />
-            ! Оставляем всю бытовую технику и дорогую дизайнерскую мебель!
-          </p>
-          <div class="flex gap-[6px] h-[26px]">
-            <span class="text-primary text-sm underline"> Читать больше </span>
-            <div
-              class="h-[24px] w-[24px] inline-flex items-center justify-center"
-            >
-              <img src="/src/assets/ChevronDown.svg" alt="" />
-            </div>
-          </div>
-        </div>
-        <div id="map">
-          <img src="/src/assets/map.png" alt="" />
-        </div>
-        <div id="common-info">
-          <h4 class="text-[#333839] text-lg font-medium pb-[20px]">
-            Общая информация
-          </h4>
+       
+          <div class="underLine"></div>
 
-          <div class="grid grid-cols-2 gap-y-[20px]">
-            <div class="flex justify-between w-[330px] gap-[4px]">
+          <div class="guaranteeSection flex flex-col gap-[15px] mobile:hidden">
+            <h4 class="font-medium text-lg">Гарантия</h4>
+            <div class="flex items-center gap-[30px]">
+              <div class="flex gap-[6px] h-[24px] items-center">
+                <img src="/src/assets/checkIcon.svg" alt="" />
+                <span class="text-primary text-sm py-[2px]"
+                  >Подходит под залог</span
+                >
+                <img
+                  src="/src/assets/info_icon.svg"
+                  alt=""
+                  class="h-[16px] w-[16px]"
+                />
+              </div>
+              <div class="flex gap-[6px] h-[24px] items-center">
+                <img src="/src/assets/checkIcon.svg" alt="" />
+                <span class="text-primary text-sm py-[2px]"
+                  >Имеется гарантия КЖК</span
+                >
+                <img
+                  src="/src/assets/info_icon.svg"
+                  class="h-[16px] w-[16px]"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>   <div class="guaranteeSection flex flex-col gap-[10px] desktop:hidden px-[16px]">
+            <h4 class="font-medium text-lg">Гарантия</h4>
+            <div class="flex flex-col">
+              <div class="flex gap-[6px] h-[24px] items-center">
+                <img src="/src/assets/checkIcon.svg" alt="" />
+                <span class="text-primary text-sm py-[2px]"
+                  >Подходит под залог</span
+                >
+                <img
+                  src="/src/assets/info_icon.svg"
+                  alt=""
+                  class="h-[16px] w-[16px]"
+                />
+              </div>
+              <div class="flex gap-[6px] h-[24px] items-center">
+                <img src="/src/assets/checkIcon.svg" alt="" />
+                <span class="text-primary text-sm py-[2px]"
+                  >Имеется гарантия КЖК</span
+                >
+                <img
+                  src="/src/assets/info_icon.svg"
+                  class="h-[16px] w-[16px]"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        <div class="underLine mobile:hidden"></div>
+          <div id="description" class="flex flex-col gap-[15px] mobile:hidden">
+            <h4 class="font-medium text-lg text-[#333839]">Описание</h4>
+            <p class="text-base text-[#333839]">
+              Срочно! Продам в экологически чистом районе - просторный, уютный Дом
+              в 100 кв м, участок 7 соток (есть возможность приватизации
+              дополнительно 3 соток земли). В доме : Зал, спальня, кухня, санузел
+              и коридор.
+              <br />
+              <br />
+              ! Оставляем всю бытовую технику и дорогую дизайнерскую мебель!
+            </p>
+            <div class="flex gap-[6px] h-[26px]">
+              <span class="text-primary text-sm underline"> Читать больше </span>
+              <div
+                class="h-[24px] w-[24px] inline-flex items-center justify-center"
+              >
+                <img src="/src/assets/ChevronDown.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div id="description" class="flex flex-col gap-[10px] desktop:hidden px-[16px] ">
+            <h4 class="font-medium text-lg text-[#333839]">Описание</h4>
+            <p class="text-base text-[#333839]">
+              В составе квартир предусматриваются жилые комнаты, кухни, санузлы,
+              балконы. Фундаменты – монолитные железобетонные, стены тех подполья -
+              железобетонные монолитные. Наружные стены и перегородки – сборные
+              трехслойные наружные стеновые несущие панели, перекрытия – сборные
+              железобетонные панели, лестницы - монолитные железобетонные.
+            </p>
+            <div class="flex gap-[6px] h-[26px]">
+              <span class="text-primary text-sm underline"> Читать больше </span>
+              <div
+                class="h-[24px] w-[24px] inline-flex items-center justify-center"
+              >
+                <img src="/src/assets/ChevronDown.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div id="map" class="mobile:hidden">
+            <img src="/src/assets/map.png" alt="" />
+          </div>
+          <div id="map" class="desktop:hidden py-[30px]">
+            <img src="/src/assets/map.png" class="h-[190px] object-cover" alt="" />
+          </div>
+          <div class="grid grid-cols-1 gap-y-[20px] desktop:hidden px-[16px]">
+            <h4 class="text-[#333839] text-lg font-medium">Общая информация</h4>
+            <div class="flex justify-between gap-[4px]">
               <span class="text-sm text-[#7a7e81]">Год постройки</span>
               <span
                 class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
@@ -858,17 +341,16 @@
                 >2007 год</span
               >
             </div>
-            <div class="flex justify-between w-[356px] h-[20px] items-center">
+            <div class="flex justify-between h-[20px] items-center">
               <span class="text-sm text-[#7a7e81]">Мебель</span>
               <span
                 class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[40%] self-end justify-self-end"
               ></span>
-              <span
-                class="text-sm font-medium text-[#333839] text-right max-w-fit"
+              <span class="text-sm font-medium text-[#333839] text-right max-w-fit"
                 >Полностью меблирована</span
               >
             </div>
-            <div class="flex justify-between w-[330px] h-[20px] items-center">
+            <div class="flex justify-between h-[20px] items-center">
               <span class="text-sm text-[#7a7e81]">Материал стен</span>
               <span
                 class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
@@ -877,7 +359,7 @@
                 >Панельный</span
               >
             </div>
-            <div class="flex justify-between w-[356px] h-[20px] items-center">
+            <div class="flex justify-between h-[20px] items-center">
               <span class="text-sm text-[#7a7e81]">Ограждение</span>
               <span
                 class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
@@ -886,22 +368,22 @@
                 >Не огорожен</span
               >
             </div>
-            <div class="flex justify-between w-[330px] h-[20px] items-center">
+            <div class="flex justify-between h-[20px] items-center">
               <span class="text-sm text-[#7a7e81]">Высота потолка</span>
               <span
                 class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
               ></span>
               <span class="text-sm font-medium text-[#333839]">3 м</span>
             </div>
-
-            <div class="flex justify-between w-[359px] h-[20px] items-center">
+    
+            <div class="flex justify-between h-[20px] items-center">
               <span class="text-sm text-[#7a7e81]">Интернет</span>
               <span
                 class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
               ></span>
               <span class="text-sm font-medium text-[#333839]">ADSL</span>
             </div>
-            <div class="flex justify-between w-[330px] h-[20px] items-center">
+            <div class="flex justify-between h-[20px] items-center">
               <span class="text-sm text-[#7a7e81]">Состояние объекта</span>
               <span
                 class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
@@ -910,7 +392,7 @@
                 >Хорошее</span
               >
             </div>
-            <div class="flex justify-between w-[359px] h-[20px] items-center">
+            <div class="flex justify-between h-[20px] items-center">
               <span class="text-sm text-[#7a7e81]">Телефон</span>
               <span
                 class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
@@ -919,7 +401,7 @@
                 >Отдельный</span
               >
             </div>
-            <div class="flex justify-between w-[330px] h-[20px] items-center">
+            <div class="flex justify-between h-[20px] items-center">
               <span class="text-sm text-[#7a7e81]">Санузел</span>
               <span
                 class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
@@ -928,7 +410,7 @@
                 >Совмещенный</span
               >
             </div>
-            <div class="flex justify-between w-[356px] h-[20px] items-center">
+            <div class="flex justify-between h-[20px] items-center">
               <span class="text-sm text-[#7a7e81]">Безопасность</span>
               <span
                 class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
@@ -937,7 +419,7 @@
                 >Решетки на окнах, домофон, охрана</span
               >
             </div>
-            <div class="flex justify-between w-[330px] h-[20px] items-center">
+            <div class="flex justify-between h-[20px] items-center">
               <span class="text-sm text-[#7a7e81]">Дополнительно</span>
               <span
                 class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
@@ -947,14 +429,169 @@
               >
             </div>
           </div>
-        </div>
+          <div id="common-info" class="mobile:hidden">
+            <h4 class="text-[#333839] text-lg font-medium pb-[20px]">
+              Общая информация
+            </h4>
+    
+            <div class="grid grid-cols-2 gap-y-[20px]">
+              <div class="flex justify-between w-[330px] gap-[4px]">
+                <span class="text-sm text-[#7a7e81]">Год постройки</span>
+                <span
+                  class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
+                ></span>
+                <span class="text-sm font-medium text-[#333839] text-right"
+                  >2007 год</span
+                >
+              </div>
+              <div class="flex justify-between w-[356px] h-[20px] items-center">
+                <span class="text-sm text-[#7a7e81]">Мебель</span>
+                <span
+                  class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[40%] self-end justify-self-end"
+                ></span>
+                <span
+                  class="text-sm font-medium text-[#333839] text-right max-w-fit"
+                  >Полностью меблирована</span
+                >
+              </div>
+              <div class="flex justify-between w-[330px] h-[20px] items-center">
+                <span class="text-sm text-[#7a7e81]">Материал стен</span>
+                <span
+                  class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
+                ></span>
+                <span class="text-sm font-medium text-[#333839] text-right"
+                  >Панельный</span
+                >
+              </div>
+              <div class="flex justify-between w-[356px] h-[20px] items-center">
+                <span class="text-sm text-[#7a7e81]">Ограждение</span>
+                <span
+                  class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
+                ></span>
+                <span class="text-sm font-medium text-[#333839] text-right"
+                  >Не огорожен</span
+                >
+              </div>
+              <div class="flex justify-between w-[330px] h-[20px] items-center">
+                <span class="text-sm text-[#7a7e81]">Высота потолка</span>
+                <span
+                  class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
+                ></span>
+                <span class="text-sm font-medium text-[#333839]">3 м</span>
+              </div>
+    
+              <div class="flex justify-between w-[359px] h-[20px] items-center">
+                <span class="text-sm text-[#7a7e81]">Интернет</span>
+                <span
+                  class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
+                ></span>
+                <span class="text-sm font-medium text-[#333839]">ADSL</span>
+              </div>
+              <div class="flex justify-between w-[330px] h-[20px] items-center">
+                <span class="text-sm text-[#7a7e81]">Состояние объекта</span>
+                <span
+                  class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
+                ></span>
+                <span class="text-sm font-medium text-[#333839]text-right"
+                  >Хорошее</span
+                >
+              </div>
+              <div class="flex justify-between w-[359px] h-[20px] items-center">
+                <span class="text-sm text-[#7a7e81]">Телефон</span>
+                <span
+                  class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
+                ></span>
+                <span class="text-sm font-medium text-[#333839] text-right"
+                  >Отдельный</span
+                >
+              </div>
+              <div class="flex justify-between w-[330px] h-[20px] items-center">
+                <span class="text-sm text-[#7a7e81]">Санузел</span>
+                <span
+                  class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
+                ></span>
+                <span class="text-sm font-medium text-[#333839] text-right"
+                  >Совмещенный</span
+                >
+              </div>
+              <div class="flex justify-between w-[356px] h-[20px] items-center">
+                <span class="text-sm text-[#7a7e81]">Безопасность</span>
+                <span
+                  class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
+                ></span>
+                <span class="text-sm font-medium text-[#333839]"
+                  >Решетки на окнах, домофон, охрана</span
+                >
+              </div>
+              <div class="flex justify-between w-[330px] h-[20px] items-center">
+                <span class="text-sm text-[#7a7e81]">Дополнительно</span>
+                <span
+                  class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
+                ></span>
+                <span class="text-sm font-medium text-[#333839] text-right"
+                  >Бассейн</span
+                >
+              </div>
+            </div>
+          </div>
 
-        <div>
-          <h4 class="text-[#333839] text-lg font-medium pb-[20px]">
-            Коммуникации
-          </h4>
-          <div class="grid grid-cols-2 gap-y-[20px]">
-            <div class="flex justify-between w-[330px] gap-[4px]">
+
+          <div class="mobile:hidden">
+            <h4 class="text-[#333839] text-lg font-medium pb-[20px]">
+              Коммуникации
+            </h4>
+            <div class="grid grid-cols-2 gap-y-[20px]">
+              <div class="flex justify-between w-[330px] gap-[4px]">
+                <span class="text-sm text-[#7a7e81]">Тип отопления</span>
+                <span
+                  class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
+                ></span>
+                <span class="text-sm font-medium text-[#333839] text-right"
+                  >На жидком топливе</span
+                >
+              </div>
+              <div class="flex justify-between w-[359px] gap-[4px]">
+                <span class="text-sm text-[#7a7e81]">Канализация</span>
+                <span
+                  class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
+                ></span>
+                <span
+                  class="text-sm font-medium text-[#333839] text-right antialiased"
+                  >Есть возможность подключения</span
+                >
+              </div>
+              <div class="flex justify-between w-[330px] gap-[4px]">
+                <span class="text-sm text-[#7a7e81]">Электричество</span>
+                <span
+                  class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
+                ></span>
+                <span class="text-sm font-medium text-[#333839] text-right"
+                  >Есть возможность подключения</span
+                >
+              </div>
+              <div class="flex justify-between w-[357px] gap-[4px]">
+                <span class="text-sm text-[#7a7e81]">Водоснабжение</span>
+                <span
+                  class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[30%] self-end justify-self-end"
+                ></span>
+                <span class="text-sm font-medium text-[#333839] text-right"
+                  >Есть возможность подключения</span
+                >
+              </div>
+              <div class="flex justify-between w-[330px] gap-[4px]">
+                <span class="text-sm text-[#7a7e81]">Газ</span>
+                <span
+                  class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
+                ></span>
+                <span class="text-sm font-medium text-[#333839] text-right"
+                  >Есть возможность подключения</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 gap-y-[20px] px-[20px] desktop:hidden">
+            <h4 class="text-[#333839] text-lg font-medium">Коммуникации</h4>
+            <div class="flex justify-between gap-[4px]">
               <span class="text-sm text-[#7a7e81]">Тип отопления</span>
               <span
                 class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
@@ -963,7 +600,7 @@
                 >На жидком топливе</span
               >
             </div>
-            <div class="flex justify-between w-[359px] gap-[4px]">
+            <div class="flex justify-between gap-[4px]">
               <span class="text-sm text-[#7a7e81]">Канализация</span>
               <span
                 class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
@@ -973,7 +610,7 @@
                 >Есть возможность подключения</span
               >
             </div>
-            <div class="flex justify-between w-[330px] gap-[4px]">
+            <div class="flex justify-between gap-[4px]">
               <span class="text-sm text-[#7a7e81]">Электричество</span>
               <span
                 class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
@@ -982,7 +619,7 @@
                 >Есть возможность подключения</span
               >
             </div>
-            <div class="flex justify-between w-[357px] gap-[4px]">
+            <div class="flex justify-between gap-[4px]">
               <span class="text-sm text-[#7a7e81]">Водоснабжение</span>
               <span
                 class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[30%] self-end justify-self-end"
@@ -991,7 +628,7 @@
                 >Есть возможность подключения</span
               >
             </div>
-            <div class="flex justify-between w-[330px] gap-[4px]">
+            <div class="flex justify-between gap-[4px]">
               <span class="text-sm text-[#7a7e81]">Газ</span>
               <span
                 class="border-dotted flex-1 border-t-0 border-l-0 border-r-0 border-x-1 border-y-[1px] h-[1px] border-[#7a7e81] w-[50%] self-end justify-self-end"
@@ -1001,242 +638,454 @@
               >
             </div>
           </div>
-        </div>
-        <div class="underLine"></div>
-        <div class="flex flex-col gap-[20px]">
-          <h4 class="text-[#333839] text-lg font-medium">
-            Новые объявления на сайте
-          </h4>
-          <div class="flex gap-[14px] items-center">
-            <button
-              class="bg-[#333839] w-[24.3px] h-[24px] rounded-[50%] flex justify-center items-center"
-            >
-              <img
-                src="/src/assets/chevronLeftBlack.svg"
-                class="object-cover"
-                alt=""
-              />
-            </button>
-            <div
-              class="flex flex-col rounded-[6px] max-w-[210px] border-midGray border-[1px]"
-            >
-              <img
-                src="/src/assets/fc847f0d787cd39e5143478204ba4258.png"
-                alt=""
-                class="rounded-tl-[6px] rounded-tr-[6px] h-[115px] object-cover"
-              />
-              <div class="py-[12px] px-[15px] flex flex-col gap-[3px]">
-                <span class="text-sm font-medium text-[#333839]"
-                  >39 900 000 ₸</span
-                >
-                <span class="text-xs text-[#333839]"
-                  >3-комнатная квартира, 58.1 м&sup2;, 6/6 этаж</span
-                >
-                <span class="text-xs text-[#7A7E81]">г. Усть-Каменогорск</span>
-                <div class="text-xs flex gap-[4px]">
-                  <span class="text-[#7A7E81]">Дешевле</span>
-                  <span class="text-[#008F91]"> на 13,2% </span>
+    
+          <div class="desktop:hidden px-[16px] flex flex-col gap-[10px]">
+            <div class="card bg-[#EBEFF1] ">
+              <div class="flex gap-[10px] items-center">
+                <div class="iconWrapper">
+                  <img src="/src/assets/User.svg" alt="" class="p-[10px]" />
+                </div>
+                <div class="flex flex-col gap-[2px]">
+                  <h4 class="text-base text-[#333839] font-medium">Фамилия Имя</h4>
+                  <span class="text-sm text-[#ADB0B2]">Собственник</span>
                 </div>
               </div>
-            </div>
-            <div
-              class="flex flex-col rounded-[6px] max-w-[210px] border-midGray border-[1px]"
-            >
-              <img
-                src="/src/assets/43c42b5d3f254b8617dedc7581e8932e.png"
-                alt=""
-                class="rounded-tl-[6px] rounded-tr-[6px] h-[115px] object-cover"
-              />
-              <div class="py-[12px] px-[15px] flex flex-col gap-[3px]">
-                <span class="text-sm font-medium text-[#333839]"
-                  >39 900 000 ₸</span
-                >
-                <span class="text-xs text-[#333839]"
-                  >3-комнатная квартира, 58.1 м², 6/6 этаж</span
-                >
-                <span class="text-xs text-[#7A7E81]">г. Усть-Каменогорск</span>
-                <div class="text-xs flex gap-[4px]">
-                  <span class="text-[#7A7E81]">Дешевле</span>
-                  <span class="text-[#008F91]"> на 13,2% </span>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="flex flex-col rounded-[6px] max-w-[210px] border-midGray border-[1px]"
-            >
-              <img
-                src="/src/assets/07580d2d1ce5534e5281939128410dd6.png"
-                alt=""
-                class="rounded-tl-[6px] rounded-tr-[6px] h-[115px] object-cover"
-              />
-              <div class="py-[12px] px-[15px] flex flex-col gap-[3px]">
-                <span class="text-sm font-medium text-[#333839]"
-                  >39 900 000 ₸</span
-                >
-                <span class="text-xs text-[#333839]"
-                  >3-комнатная квартира, 58.1 м², 6/6 этаж</span
-                >
-                <span class="text-xs text-[#7A7E81]">г. Усть-Каменогорск</span>
-                <div class="text-xs flex gap-[4px]">
-                  <span class="text-[#7A7E81]">Дешевле</span>
-                  <span class="text-[#008F91]"> на 13,2% </span>
-                </div>
-              </div>
-            </div>
-            <button
-              class="bg-[#333839] w-[24.3px] h-[24px] rounded-[50%] flex justify-center items-center"
-            >
-              <img src="/src/assets/chevronRightBlack.svg" alt="" />
-            </button>
-          </div>
-        </div>
-        <div class="flex flex-col gap-[20px]">
-          <h4 class="text-[#333839] text-lg font-medium">Недавно смотрели</h4>
-          <div class="flex gap-[14px] items-center">
-            <button
-              class="bg-[#333839] w-[24.3px] h-[24px] rounded-[50%] flex justify-center items-center"
-            >
-              <img
-                src="/src/assets/chevronLeftBlack.svg"
-                class="object-cover"
-                alt=""
-              />
-            </button>
-            <div
-              class="flex flex-col rounded-[6px] max-w-[210px] border-midGray border-[1px]"
-            >
-              <img
-                src="/src/assets/36aba52bc53104564b302e76fff29411.jpg"
-                alt=""
-                class="rounded-tl-[6px] rounded-tr-[6px] h-[115px] object-cover"
-              />
-              <div class="py-[12px] px-[15px] flex flex-col gap-[3px]">
-                <span class="text-sm font-medium text-[#333839]"
-                  >39 900 000 ₸</span
-                >
-                <span class="text-xs text-[#333839]"
-                  >3-комнатная квартира, 58.1 м², 6/6 этаж</span
-                >
-                <span class="text-xs text-[#7A7E81]">г. Усть-Каменогорск</span>
-                <div class="text-xs flex gap-[4px]">
-                  <span class="text-[#7A7E81]">Дешевле</span>
-                  <span class="text-[#008F91]"> на 13,2% </span>
-                </div>
-              </div>
-            </div>
-            <div
-              class="flex flex-col rounded-[6px] max-w-[210px] border-midGray border-[1px]"
-            >
-              <img
-                src="/src/assets/c1a97ca2d87aae4211f787f0963ef6f9.jpg"
-                alt=""
-                class="rounded-tl-[6px] rounded-tr-[6px] h-[115px] object-cover"
-              />
-              <div class="py-[12px] px-[15px] flex flex-col gap-[3px]">
-                <span class="text-sm font-medium text-[#333839]"
-                  >39 900 000 ₸</span
-                >
-                <span class="text-xs text-[#333839]"
-                  >3-комнатная квартира, 58.1 м², 6/6 этаж</span
-                >
-                <span class="text-xs text-[#7A7E81]">г. Усть-Каменогорск</span>
-                <div class="text-xs flex gap-[4px]">
-                  <span class="text-[#7A7E81]">Дешевле</span>
-                  <span class="text-[#008F91]"> на 13,2% </span>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="flex flex-col rounded-[6px] max-w-[210px] border-midGray border-[1px]"
-            >
-              <img
-                src="/src/assets/a2b8a28f35f80895dca150f91d1ae5d3.jpg"
-                alt=""
-                class="rounded-tl-[6px] rounded-tr-[6px] h-[115px] object-cover"
-              />
-              <div class="py-[12px] px-[15px] flex flex-col gap-[3px]">
-                <span class="text-sm font-medium text-[#333839]"
-                  >39 900 000 ₸</span
-                >
-                <span class="text-xs text-[#333839]"
-                  >3-комнатная квартира, 58.1 м², 6/6 этаж</span
-                >
-                <span class="text-xs text-[#7A7E81]">г. Усть-Каменогорск</span>
-                <div class="text-xs flex gap-[4px]">
-                  <span class="text-[#7A7E81]">Дешевле</span>
-                  <span class="text-[#008F91]"> на 13,2% </span>
-                </div>
-              </div>
-            </div>
-            <button
-              class="bg-[#333839] w-[24.3px] h-[24px] rounded-[50%] flex justify-center items-center"
-            >
-              <img src="/src/assets/chevronRightBlack.svg" alt="" />
-            </button>
-          </div>
-        </div>
-      </section>
-      <aside class="flex-[1_0_33%]">
-        <div class="flex flex-col gap-[30px]">
-          <div class="card">
-            <h1 class="text-lg font-medium text-[#333839]">38 800 000 ₸</h1>
-            <div class="flex flex-col items-start gap-[4px]">
-              <span class="text-sm text-[#ADB0B2]">Площадь квартиры</span>
-              <span class="text-base text-[#333839] font-medium"
-                >110,6 м&sup2</span
+              <button
+                id="mobileShowContactsBtn"
+                class="showContactsBtn btn btn-large btn-additional text-base"
               >
-            </div>
-            <div class="chip error self-start">В залоге</div>
-            <div class="underLine"></div>
-            <div class="flex gap-[10px] items-center">
-              <div class="iconWrapper">
-                <img src="/src/assets/User.svg" alt="" class="p-[10px]" />
-              </div>
-              <div class="flex flex-col gap-[3px]">
-                <h4 class="text-base text-[#333839] font-medium">
-                  Фамилия Имя
-                </h4>
-                <span class="text-sm text-[#ADB0B2]">Собственник</span>
-              </div>
-            </div>
-            <button
-              id="desktopShowContactsBtn"
-              class="showContactsBtn btn btn-large btn-additional text-base"
-            >
-              Показать контакты
-            </button>
-          </div>
-          <button class="btn btn-large btn-primary text-base">
-            Расчитать Ипотеку
-          </button>
-          <div class="card">
-            <div class="flex items-center gap-[13px] h-[66px]">
-              <img src="/src/assets/logoArea.svg" alt="" />
-              <h4 class="text-base text-[#333839] font-medium h-[66px]">
-                Получите консультацию прямо сейчас и оформите ONLINE ипотеку со
-                скидкой 50%
-              </h4>
-            </div>
-            <div class="flex flex-col gap-[10px]">
-              <button class="btn btn-secondary btn-large text-base">
-                Заказать обратный звонок
+                Показать контакты
               </button>
-              <div class="flex flex-col gap-[4px] items-center">
-                <span class="text-[#333839] text-sm">или</span>
-                <span class="text-[#333839] text-sm">заполните анкету </span>
-                <span class="text-[#333839] text-sm"
-                  >и наш консультант Вам перезвонит</span
+            </div>
+            <div class="card">
+              <div class="flex items-center gap-[13px] h-[66px]">
+                <img src="/src/assets/logoArea.svg" alt="" />
+                <h4 class="text-base text-[#333839] font-medium h-[66px]">
+                  Получите консультацию прямо сейчас и оформите ONLINE ипотеку со
+                  скидкой 50%
+                </h4>
+              </div>
+              <div class="flex flex-col gap-[10px]">
+                <button class="btn btn-secondary btn-large text-base">
+                  Заказать обратный звонок
+                </button>
+                <div class="flex flex-col gap-[4px] items-center">
+                  <span class="text-[#333839] text-sm">или</span>
+                  <span class="text-[#333839] text-sm">заполните анкету </span>
+                  <span class="text-[#333839] text-sm"
+                    >и наш консультант Вам перезвонит</span
+                  >
+                </div>
+                <button class="btn btn-large btn-additional text-base">
+                  Заказать консультацию
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-[20px] mobile:hidden">
+            <h4 class="text-[#333839] text-lg font-medium">
+              Новые объявления на сайте
+            </h4>
+            <div class="flex gap-[14px] items-center">
+              <button
+                class="bg-[#333839] w-[24.3px] h-[24px] rounded-[50%] flex justify-center items-center"
+              >
+                <img
+                  src="/src/assets/chevronLeftBlack.svg"
+                  class="object-cover"
+                  alt=""
+                />
+              </button>
+              <div
+                class="flex flex-col rounded-[6px] max-w-[210px] border-midGray border-[1px]"
+              >
+                <img
+                  src="/src/assets/fc847f0d787cd39e5143478204ba4258.png"
+                  alt=""
+                  class="rounded-tl-[6px] rounded-tr-[6px] h-[115px] object-cover"
+                />
+                <div class="py-[12px] px-[15px] flex flex-col gap-[3px]">
+                  <span class="text-sm font-medium text-[#333839]"
+                    >39 900 000 ₸</span
+                  >
+                  <span class="text-xs text-[#333839]"
+                    >3-комнатная квартира, 58.1 м&sup2;, 6/6 этаж</span
+                  >
+                  <span class="text-xs text-[#7A7E81]">г. Усть-Каменогорск</span>
+                  <div class="text-xs flex gap-[4px]">
+                    <span class="text-[#7A7E81]">Дешевле</span>
+                    <span class="text-[#008F91]"> на 13,2% </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col rounded-[6px] max-w-[210px] border-midGray border-[1px]"
+              >
+                <img
+                  src="/src/assets/43c42b5d3f254b8617dedc7581e8932e.png"
+                  alt=""
+                  class="rounded-tl-[6px] rounded-tr-[6px] h-[115px] object-cover"
+                />
+                <div class="py-[12px] px-[15px] flex flex-col gap-[3px]">
+                  <span class="text-sm font-medium text-[#333839]"
+                    >39 900 000 ₸</span
+                  >
+                  <span class="text-xs text-[#333839]"
+                    >3-комнатная квартира, 58.1 м², 6/6 этаж</span
+                  >
+                  <span class="text-xs text-[#7A7E81]">г. Усть-Каменогорск</span>
+                  <div class="text-xs flex gap-[4px]">
+                    <span class="text-[#7A7E81]">Дешевле</span>
+                    <span class="text-[#008F91]"> на 13,2% </span>
+                  </div>
+                </div>
+              </div>
+  
+              <div
+                class="flex flex-col rounded-[6px] max-w-[210px] border-midGray border-[1px]"
+              >
+                <img
+                  src="/src/assets/07580d2d1ce5534e5281939128410dd6.png"
+                  alt=""
+                  class="rounded-tl-[6px] rounded-tr-[6px] h-[115px] object-cover"
+                />
+                <div class="py-[12px] px-[15px] flex flex-col gap-[3px]">
+                  <span class="text-sm font-medium text-[#333839]"
+                    >39 900 000 ₸</span
+                  >
+                  <span class="text-xs text-[#333839]"
+                    >3-комнатная квартира, 58.1 м², 6/6 этаж</span
+                  >
+                  <span class="text-xs text-[#7A7E81]">г. Усть-Каменогорск</span>
+                  <div class="text-xs flex gap-[4px]">
+                    <span class="text-[#7A7E81]">Дешевле</span>
+                    <span class="text-[#008F91]"> на 13,2% </span>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="bg-[#333839] w-[24.3px] h-[24px] rounded-[50%] flex justify-center items-center"
+              >
+                <img src="/src/assets/chevronRightBlack.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="flex flex-col gap-[20px] mobile:hidden">
+            <h4 class="text-[#333839] text-lg font-medium">Недавно смотрели</h4>
+            <div class="flex gap-[14px] items-center">
+              <button
+                class="bg-[#333839] w-[24.3px] h-[24px] rounded-[50%] flex justify-center items-center"
+              >
+                <img
+                  src="/src/assets/chevronLeftBlack.svg"
+                  class="object-cover"
+                  alt=""
+                />
+              </button>
+              <div
+                class="flex flex-col rounded-[6px] max-w-[210px] border-midGray border-[1px]"
+              >
+                <img
+                  src="/src/assets/36aba52bc53104564b302e76fff29411.jpg"
+                  alt=""
+                  class="rounded-tl-[6px] rounded-tr-[6px] h-[115px] object-cover"
+                />
+                <div class="py-[12px] px-[15px] flex flex-col gap-[3px]">
+                  <span class="text-sm font-medium text-[#333839]"
+                    >39 900 000 ₸</span
+                  >
+                  <span class="text-xs text-[#333839]"
+                    >3-комнатная квартира, 58.1 м², 6/6 этаж</span
+                  >
+                  <span class="text-xs text-[#7A7E81]">г. Усть-Каменогорск</span>
+                  <div class="text-xs flex gap-[4px]">
+                    <span class="text-[#7A7E81]">Дешевле</span>
+                    <span class="text-[#008F91]"> на 13,2% </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col rounded-[6px] max-w-[210px] border-midGray border-[1px]"
+              >
+                <img
+                  src="/src/assets/c1a97ca2d87aae4211f787f0963ef6f9.jpg"
+                  alt=""
+                  class="rounded-tl-[6px] rounded-tr-[6px] h-[115px] object-cover"
+                />
+                <div class="py-[12px] px-[15px] flex flex-col gap-[3px]">
+                  <span class="text-sm font-medium text-[#333839]"
+                    >39 900 000 ₸</span
+                  >
+                  <span class="text-xs text-[#333839]"
+                    >3-комнатная квартира, 58.1 м², 6/6 этаж</span
+                  >
+                  <span class="text-xs text-[#7A7E81]">г. Усть-Каменогорск</span>
+                  <div class="text-xs flex gap-[4px]">
+                    <span class="text-[#7A7E81]">Дешевле</span>
+                    <span class="text-[#008F91]"> на 13,2% </span>
+                  </div>
+                </div>
+              </div>
+  
+              <div
+                class="flex flex-col rounded-[6px] max-w-[210px] border-midGray border-[1px]"
+              >
+                <img
+                  src="/src/assets/a2b8a28f35f80895dca150f91d1ae5d3.jpg"
+                  alt=""
+                  class="rounded-tl-[6px] rounded-tr-[6px] h-[115px] object-cover"
+                />
+                <div class="py-[12px] px-[15px] flex flex-col gap-[3px]">
+                  <span class="text-sm font-medium text-[#333839]"
+                    >39 900 000 ₸</span
+                  >
+                  <span class="text-xs text-[#333839]"
+                    >3-комнатная квартира, 58.1 м², 6/6 этаж</span
+                  >
+                  <span class="text-xs text-[#7A7E81]">г. Усть-Каменогорск</span>
+                  <div class="text-xs flex gap-[4px]">
+                    <span class="text-[#7A7E81]">Дешевле</span>
+                    <span class="text-[#008F91]"> на 13,2% </span>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="bg-[#333839] w-[24.3px] h-[24px] rounded-[50%] flex justify-center items-center"
+              >
+                <img src="/src/assets/chevronRightBlack.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="flex flex-col gap-[10px] px-[16px] desktop:hidden">
+            <h4 class="text-[#333839] text-lg font-medium">Новые объявления</h4>
+            <div class="flex gap-[9px] items-center overflow-x-auto">
+              <div
+                class="flex flex-col w-[165px] flex-shrink-0 rounded-[6px] border-midGray border-[1px] gap-[11.28px]"
+              >
+                <img
+                  src="/src/assets/fc847f0d787cd39e5143478204ba4258.png"
+                  alt=""
+                  class="rounded-tl-[6px] rounded-tr-[6px] h-[85px] object-cover"
+                />
+                <div class="px-[15px] flex flex-col gap-[4px] pb-[14.51px]">
+                  <span class="text-xs font-semibold text-[#2C3537]"
+                    >39 900 000 ₸</span
+                  >
+                  <span class="text-[11px] text-[#333839]"
+                    >3-комнатная квартира, 58.1 м&sup2;, 6/6 этаж</span
+                  >
+                  <span class="text-[10px] text-[#7A7E81]"
+                    >г. Усть-Каменогорск</span
+                  >
+                  <div class="text-[10px] flex gap-[4px]">
+                    <span class="text-[#7A7E81]">Дешевле</span>
+                    <span class="text-[#008F91]"> на 13,2% </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col w-[165px] flex-shrink-0 rounded-[6px] border-midGray border-[1px] gap-[11.28px]"
+              >
+                <img
+                  src="/src/assets/43c42b5d3f254b8617dedc7581e8932e.png"
+                  alt=""
+                  class="rounded-tl-[6px] rounded-tr-[6px] h-[85px] object-cover"
+                />
+                <div class="px-[15px] flex flex-col gap-[4px] pb-[14.51px]">
+                  <span class="text-xs font-semibold text-[#2C3537]"
+                    >39 900 000 ₸</span
+                  >
+                  <span class="text-[11px] text-[#333839]"
+                    >3-комнатная квартира, 58.1 м&sup2;, 6/6 этаж</span
+                  >
+                  <span class="text-[10px] text-[#7A7E81]"
+                    >г. Усть-Каменогорск</span
+                  >
+                  <div class="text-[10px] flex gap-[4px]">
+                    <span class="text-[#7A7E81]">Дешевле</span>
+                    <span class="text-[#008F91]"> на 13,2% </span>
+                  </div>
+                </div>
+              </div>
+    
+              <div
+                class="flex flex-col w-[165px] flex-shrink-0 rounded-[6px] border-midGray border-[1px] gap-[11.28px]"
+              >
+                <img
+                  src="/src/assets/07580d2d1ce5534e5281939128410dd6.png"
+                  alt=""
+                  class="rounded-tl-[6px] rounded-tr-[6px] h-[85px] object-cover"
+                />
+                <div class="px-[15px] flex flex-col gap-[4px] pb-[14.51px]">
+                  <span class="text-xs font-semibold text-[#2C3537]"
+                    >39 900 000 ₸</span
+                  >
+                  <span class="text-[11px] text-[#333839]"
+                    >3-комнатная квартира, 58.1 м&sup2;, 6/6 этаж</span
+                  >
+                  <span class="text-[10px] text-[#7A7E81]"
+                    >г. Усть-Каменогорск</span
+                  >
+                  <div class="text-[10px] flex gap-[4px]">
+                    <span class="text-[#7A7E81]">Дешевле</span>
+                    <span class="text-[#008F91]"> на 13,2% </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="flex flex-col gap-[10px] px-[16px] desktop:hidden ">
+              <h4 class="text-[#333839] text-lg font-medium">Недавно смотрели</h4>
+              <div class="flex gap-[9px] items-center overflow-x-auto">
+                <div
+                  class="flex flex-col w-[165px] flex-shrink-0 rounded-[6px] border-midGray border-[1px] gap-[11.28px]"
+                >
+                  <img
+                    src="/src/assets/fc847f0d787cd39e5143478204ba4258.png"
+                    alt=""
+                    class="rounded-tl-[6px] rounded-tr-[6px] h-[85px] object-cover"
+                  />
+                  <div class="px-[15px] flex flex-col gap-[4px] pb-[14.51px]">
+                    <span class="text-xs font-semibold text-[#2C3537]"
+                      >39 900 000 ₸</span
+                    >
+                    <span class="text-[11px] text-[#333839]"
+                      >3-комнатная квартира, 58.1 м&sup2;, 6/6 этаж</span
+                    >
+                    <span class="text-[10px] text-[#7A7E81]"
+                      >г. Усть-Каменогорск</span
+                    >
+                    <div class="text-[10px] flex gap-[4px]">
+                      <span class="text-[#7A7E81]">Дешевле</span>
+                      <span class="text-[#008F91]"> на 13,2% </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col w-[165px] flex-shrink-0 rounded-[6px] border-midGray border-[1px] gap-[11.28px]"
+                >
+                  <img
+                    src="/src/assets/43c42b5d3f254b8617dedc7581e8932e.png"
+                    alt=""
+                    class="rounded-tl-[6px] rounded-tr-[6px] h-[85px] object-cover"
+                  />
+                  <div class="px-[15px] flex flex-col gap-[4px] pb-[14.51px]">
+                    <span class="text-xs font-semibold text-[#2C3537]"
+                      >39 900 000 ₸</span
+                    >
+                    <span class="text-[11px] text-[#333839]"
+                      >3-комнатная квартира, 58.1 м&sup2;, 6/6 этаж</span
+                    >
+                    <span class="text-[10px] text-[#7A7E81]"
+                      >г. Усть-Каменогорск</span
+                    >
+                    <div class="text-[10px] flex gap-[4px]">
+                      <span class="text-[#7A7E81]">Дешевле</span>
+                      <span class="text-[#008F91]"> на 13,2% </span>
+                    </div>
+                  </div>
+                </div>
+      
+                <div
+                  class="flex flex-col w-[165px] flex-shrink-0 rounded-[6px] border-midGray border-[1px] gap-[11.28px]"
+                >
+                  <img
+                    src="/src/assets/07580d2d1ce5534e5281939128410dd6.png"
+                    alt=""
+                    class="rounded-tl-[6px] rounded-tr-[6px] h-[85px] object-cover"
+                  />
+                  <div class="px-[15px] flex flex-col gap-[4px] pb-[14.51px]">
+                    <span class="text-xs font-semibold text-[#2C3537]"
+                      >39 900 000 ₸</span
+                    >
+                    <span class="text-[11px] text-[#333839]"
+                      >3-комнатная квартира, 58.1 м&sup2;, 6/6 этаж</span
+                    >
+                    <span class="text-[10px] text-[#7A7E81]"
+                      >г. Усть-Каменогорск</span
+                    >
+                    <div class="text-[10px] flex gap-[4px]">
+                      <span class="text-[#7A7E81]">Дешевле</span>
+                      <span class="text-[#008F91]"> на 13,2% </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+        </div>
+        <aside class="flex-[1_0_33%] mobile:hidden">
+          <div class="flex flex-col gap-[30px]">
+            <div class="card">
+              <h1 class="text-lg font-medium text-[#333839]">38 800 000 ₸</h1>
+              <div class="flex flex-col items-start gap-[4px]">
+                <span class="text-sm text-[#ADB0B2]">Площадь квартиры</span>
+                <span class="text-base text-[#333839] font-medium"
+                  >110,6 м&sup2</span
                 >
               </div>
-              <button class="btn btn-large btn-additional text-base">
-                Заказать консультацию
+              <div class="chip error self-start">В залоге</div>
+              <div class="underLine"></div>
+              <div class="flex gap-[10px] items-center">
+                <div class="iconWrapper">
+                  <img src="/src/assets/User.svg" alt="" class="p-[10px]" />
+                </div>
+                <div class="flex flex-col gap-[3px]">
+                  <h4 class="text-base text-[#333839] font-medium">
+                    Фамилия Имя
+                  </h4>
+                  <span class="text-sm text-[#ADB0B2]">Собственник</span>
+                </div>
+              </div>
+              <button
+                id="desktopShowContactsBtn"
+                class="showContactsBtn btn btn-large btn-additional text-base"
+              >
+                Показать контакты
               </button>
             </div>
+            <button class="btn btn-large btn-primary text-base">
+              Расчитать Ипотеку
+            </button>
+            <div class="card">
+              <div class="flex items-center gap-[13px] h-[66px]">
+                <img src="/src/assets/logoArea.svg" alt="" />
+                <h4 class="text-base text-[#333839] font-medium h-[66px]">
+                  Получите консультацию прямо сейчас и оформите ONLINE ипотеку со
+                  скидкой 50%
+                </h4>
+              </div>
+              <div class="flex flex-col gap-[10px]">
+                <button class="btn btn-secondary btn-large text-base">
+                  Заказать обратный звонок
+                </button>
+                <div class="flex flex-col gap-[4px] items-center">
+                  <span class="text-[#333839] text-sm">или</span>
+                  <span class="text-[#333839] text-sm">заполните анкету </span>
+                  <span class="text-[#333839] text-sm"
+                    >и наш консультант Вам перезвонит</span
+                  >
+                </div>
+                <button class="btn btn-large btn-additional text-base">
+                  Заказать консультацию
+                </button>
+              </div>
+            </div>
           </div>
-        </div>
-      </aside>
+        </aside>
+      </div>
+    </section>
+ 
+
+    
+
+    
+      
+    
+    </section>
+  
+
+      
     </div>
     <script>
       function handleButtonClick(event) {
@@ -1265,46 +1114,38 @@
       document.querySelectorAll(".showContactsBtn").forEach((button) => {
         button.addEventListener("click", handleButtonClick);
       });
-      $(document).ready(function () {
-        $("#main-img-wrapper .slick-slider").slick({
-          infinite: true,
-          speed: 300,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          autoplay: true,
-          autoplaySpeed: 1100,
-          adaptiveHeight: true,
-          prevArrow: $("#main-img-wrapper .slick-prev"),
-          nextArrow: $("#main-img-wrapper .slick-next"),
-        });
-        $("#main-img-wrapper .slider-nav").slick({
-          slidesToShow: 5,
-          asNavFor: "#main-img-wrapper .slick-slider",
-          focusOnSelect: true,
-          autoplay: false,
-          centerMode: true,
-        });
-        $("#img-wrapper-mobile .slick-slider").slick({
-          infinite: true,
-          speed: 300,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          autoplay: false,
-          arrows: true,
-          prevArrow: $("#img-wrapper-mobile .slick-prev"),
-          nextArrow: $("#img-wrapper-mobile .slick-next"),
-          asNavFor: "#img-wrapper-mobile .slider-nav",
-        });
+      $('.slick-slider').slick({
+        infinite: true,
+        speed: 300,
+        autoplay: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        asNavFor: '.slider-nav',
+        prevArrow: $(".slick-prev"),
+        nextArrow: $(".slick-next"),
+    });
 
-        $("#img-wrapper-mobile .slider-nav").slick({
-          slidesToShow: 6,
-          slidesToScroll: 1,
-          asNavFor: "#img-wrapper-mobile .slick-slider",
-          focusOnSelect: true,
-          autoplay: false,
-          centerMode: true,
-        });
-      });
+    $('.slider-nav').slick({
+        infinite: false,
+        slidesToShow: 6,
+        slidesToScroll: 6,
+        asNavFor: '.slick-slider',
+        dots: false,
+        focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    centerMode: true,
+                    variableWidth: true
+                }
+            }
+        ]
+    });
     </script>
   </body>
 </html>
