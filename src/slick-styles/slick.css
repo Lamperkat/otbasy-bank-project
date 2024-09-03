@@ -16,6 +16,7 @@
     -ms-touch-action: pan-y;
         touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
+    width: 100%;
 }
 
 .slick-list
@@ -103,11 +104,8 @@
     height: 100%;
     width: 100%;
 }
-.slider-nav .slick-track{
-    display: grid;
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-    gap: 10px;
-}
+
+
 @media screen and (max-width:480px){
     .slider-nav .slick-track{
 

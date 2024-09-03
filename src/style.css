@@ -81,10 +81,16 @@ a{
     object-fit: cover;
 }
 @media screen(tablet){
+   
     .slider-nav .slick-track{
-        gap: 6px;
+        display: flex;
+        gap: 6px !important;
     }
-   .slider-nav .slick-track .slick-slide{
-        width: 98% !important;
+}
+@media screen(desktop){
+
+    .slider-nav .slick-track{
+        display: flex;
+        gap: 10px !important;
     }
 }
