@@ -98,7 +98,7 @@
 }
 .slider-nav .slick-slide{
     height: 80px !important;
-    width: 114px !important;
+    width: 114.8px !important;
 }
 .slider-nav .slick-slide img{
     height: 100%;
@@ -160,3 +160,6 @@
     .slider-nav .slick-track{
         gap: 6px !important;
     }}
+    @media screen(desktop){
+
+    }
