@@ -13,7 +13,7 @@ module.exports = {
       mobile: { max: '480px' },
       tablet:{
         min:'481px',
-        max:'992px'
+        max:'1199px'
       },
       desktop: { min: '1200px' },
     },
