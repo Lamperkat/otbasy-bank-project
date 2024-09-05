@@ -864,6 +864,14 @@ video {
   gap: 9px;
 }
 
+.gap-y-\[10px\]{
+  row-gap: 10px;
+}
+
+.gap-y-\[13px\]{
+  row-gap: 13px;
+}
+
 .gap-y-\[20px\]{
   row-gap: 20px;
 }
@@ -1316,6 +1324,7 @@ a{
   .slider-nav .slick-track{
     display: flex;
     gap: 6px !important;
+    justify-content: center;
   }
 }
 
@@ -1341,10 +1350,6 @@ a{
 
   .mobile\:hidden{
     display: none;
-  }
-
-  .mobile\:h-\[239px\]{
-    height: 239px;
   }
 
   .mobile\:h-\[28px\]{
@@ -1373,14 +1378,6 @@ a{
 
   .mobile\:gap-\[7px\]{
     gap: 7px;
-  }
-
-  .mobile\:gap-\[16px\]{
-    gap: 16px;
-  }
-
-  .mobile\:gap-\[30px\]{
-    gap: 30px;
   }
 
   .mobile\:overflow-x-hidden{

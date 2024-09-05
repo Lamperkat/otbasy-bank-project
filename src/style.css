@@ -85,6 +85,7 @@ a{
     .slider-nav .slick-track{
         display: flex;
         gap: 6px !important;
+        justify-content: center;
     }
 }
 @media screen(desktop){
