@@ -1312,7 +1312,7 @@ a{
      object-fit: cover;
 }
 
-@media (min-width: 481px) and (max-width: 1199px){
+@media (min-width: 481px) and (max-width: 1200px){
   .slider-nav .slick-track{
     display: flex;
     gap: 6px !important;
@@ -1375,6 +1375,14 @@ a{
     gap: 7px;
   }
 
+  .mobile\:gap-\[16px\]{
+    gap: 16px;
+  }
+
+  .mobile\:gap-\[30px\]{
+    gap: 30px;
+  }
+
   .mobile\:overflow-x-hidden{
     overflow-x: hidden;
   }
@@ -1398,7 +1406,7 @@ a{
   }
 }
 
-@media (min-width: 481px) and (max-width: 1199px){
+@media (min-width: 481px) and (max-width: 1200px){
   .tablet\:hidden{
     display: none;
   }
